@@ -1,0 +1,12 @@
+# Permalink
+permalink:          jed-ai
+
+# Setup
+      
+url:                https://jed-ai.github.io/
+
+markdown: kramdown
+
+paginate: 5
+
+

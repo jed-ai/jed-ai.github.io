@@ -1,0 +1,392 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Config font of blog */
+h1 { 
+    color: #333333; 
+    font-family: 'Bitter'; 
+}
+
+h2 { 
+    color: #333333; 
+    font-family: 'Bitter';  
+}
+
+h3 { 
+    color: #333333; 
+    font-family: 'Bitter';  
+}
+
+p { 
+    color: #333333; 
+    font-family: 'Georgia'; 
+}
+
+li { 
+    color: #333333; 
+    font-family: 'Georgia'; 
+}
+
+td { 
+    color: #333333; 
+    font-family: 'Georgia'; 
+}
+
+/* Config for top image: the creation of AI */
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.body {
+    margin: 20px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/* 2-columns structure of the blog */
+.row {
+    content: "";
+    display: table;
+    clear: both;
+    width: 100%;
+}
+
+.left {
+    padding: 10px;
+    width: 25%;
+    -webkit-width: 25%;
+    -moz-width: 25%;
+    -ms-width: 25%;
+    -o-width: 25%;
+    display: table-cell;
+    text-align: justify;
+}
+
+.right {
+    padding: 10px;
+    width: 75%;
+    -webkit-width: 25%;
+    -moz-width: 25%;
+    -ms-width: 25%;
+    -o-width: 25%;
+    display: table-cell;
+    text-align: justify;
+}
+
+/* Border for header */
+header {
+    border-top: 1px solid #d6d6d6;
+    border-bottom:1px solid #d6d6d6;
+    padding:10px 0px 10px 0px;
+    margin:20px 0px 20px 0px;
+}
+
+/* Config for link */
+a.link {
+    font-family: 'Georgia'; 
+    color: blueviolet;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/*
+a.main_post {
+    color: chocolate;
+    text-decoration: none;
+}
+*/
+
+/* Config of resume image */
+img.resume {
+    float: left;
+    width: 150px;
+    height: 185px;
+    padding-right: 5px;
+}
+
+/* Config of logo image */
+img.logo {
+    text-align: center;
+    vertical-align: top;
+    width: 200px;
+    height: 200px;
+}
+
+/* Format the title of resume */
+h2.cvclass {
+    border-bottom:1px solid black;
+    color: dimgrey
+}
+
+/* Config box of post display */
+.box {
+    background-color: aliceblue;
+    padding: 5px;
+    border: 2px solid #d6d6d6;*/
+}
+
+/* Rey animation gif */
+.rey {
+    position: relative;
+    left: 10%;
+    cursor: pointer;
+    
+    animation: walk 15s infinite linear;
+    -webkit-animation: walk 15s infinite linear;
+    -moz-animation: walk 15s infinite linear;
+    -ms-animation: walk 15s infinite linear;
+    -o-animation: walk 15s infinite linear;
+    
+}
+
+@keyframes walk{
+    49% {
+        left: 80%;
+        transform: rotateY(0deg);
+    }
+    
+    50% {
+        transform: rotateY(180deg);
+    }
+    
+    99% {
+        left: 10%;
+        transform: rotateY(180deg);
+    }
+    
+    100% {
+        transform: rotateY(0deg);
+    }
+
+}
+
+/* Xwing animation */
+
+.xwing {
+    width: 200px;
+    height: 128px;
+    
+    position: fixed;
+    left: -50%;
+    bottom: 0%;
+    
+    animation: fly 15s infinite linear;
+    -webkit-animation: fly 15s infinite linear;
+    -moz-animation: fly 15s infinite linear;
+    -ms-animation: fly 15s infinite linear;
+    -o-animation: fly 15s infinite linear;
+}
+
+@keyframes fly {
+    50% {
+        left: -50%;
+        bottom: 0%;
+    }
+    
+    51% {
+        transform: rotateZ(50deg);
+    }
+    
+    75% {
+        left: 75%;
+        bottom: 50%;
+        transform: rotateZ(50deg);
+    }
+    
+    76% {
+        transform: rotateZ(-50deg);
+    }
+    
+    99% {
+        left: -50%;
+        bottom: 100%;
+        transform: rotateZ(-50deg);
+    }
+    
+    100% {
+        transform: rotateZ(50deg);
+    }
+}
+
+/* -------------------------------- */
+/*           Block quotes           */
+/* -------------------------------- */
+
+blockquote{
+  display:block;
+  background: #fff;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+  
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #666;
+  text-align: justify;
+  
+  /*Borders - (Optional)*/
+  border-left: 15px solid #c76c0c;
+  border-right: 2px solid #c76c0c;
+  
+  /*Box Shadow - (Optional)*/
+  -moz-box-shadow: 2px 2px 15px #ccc;
+  -webkit-box-shadow: 2px 2px 15px #ccc;
+  box-shadow: 2px 2px 15px #ccc;
+}
+
+blockquote::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+  
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+  
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top:5px;
+}
+
+blockquote::after{
+  /*Reset to make sure*/
+  content: "";
+}
+
+blockquote a{
+  text-decoration: none;
+  background: #eee;
+  cursor: pointer;
+  padding: 0 3px;
+  color: #c76c0c;
+}
+
+blockquote a:hover{
+ color: #666;
+}
+
+blockquote em{
+  font-style: italic;
+}
+
+/* ---------------------------- */
+/*        Post Table            */
+/* ---------------------------- */
+.posttab {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+
+/* ----------------------------
+    Define code block theme 
+------------------------------ */
+
+pre, code {
+    border: 1px solid #d5d5e9;
+    background-color: #FFF;
+    padding: 8px 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 15px;
+    overflow:scroll;
+}
+
+code { padding: 1px 5px; }
+
+pre code {
+  border: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* terminal */
+pre.terminal {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+pre.terminal code { background-color: #333; }
+
+/* Syntax highlighting styles */
+/* ----------------------------------------------------------*/
+
+.highlight  { background: #ffffff; }
+.highlight .c { color: #999988; font-style: italic } /* Comment */
+.highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+.highlight .k { font-weight: bold } /* Keyword */
+.highlight .o { font-weight: bold } /* Operator */
+.highlight .cm { color: #999988; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #999999; font-weight: bold } /* Comment.Preproc */
+.highlight .c1 { color: #999988; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #999999; font-weight: bold; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
+.highlight .gd .x { color: #000000; background-color: #ffaaaa } /* Generic.Deleted.Specific */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #aa0000 } /* Generic.Error */
+.highlight .gh { color: #999999 } /* Generic.Heading */
+.highlight .gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
+.highlight .gi .x { color: #000000; background-color: #aaffaa } /* Generic.Inserted.Specific */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #555555 } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #aaaaaa } /* Generic.Subheading */
+.highlight .gt { color: #aa0000 } /* Generic.Traceback */
+.highlight .kc { font-weight: bold } /* Keyword.Constant */
+.highlight .kd { font-weight: bold } /* Keyword.Declaration */
+.highlight .kp { font-weight: bold } /* Keyword.Pseudo */
+.highlight .kr { font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #445588; font-weight: bold } /* Keyword.Type */
+.highlight .m { color: #009999 } /* Literal.Number */
+.highlight .s { color: #d14 } /* Literal.String */
+.highlight .na { color: #008080 } /* Name.Attribute */
+.highlight .nb { color: #0086B3 } /* Name.Builtin */
+.highlight .nc { color: #445588; font-weight: bold } /* Name.Class */
+.highlight .no { color: #008080 } /* Name.Constant */
+.highlight .ni { color: #800080 } /* Name.Entity */
+.highlight .ne { color: #990000; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #990000; font-weight: bold } /* Name.Function */
+.highlight .nn { color: #555555 } /* Name.Namespace */
+.highlight .nt { color: #000080 } /* Name.Tag */
+.highlight .nv { color: #008080 } /* Name.Variable */
+.highlight .ow { font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mf { color: #009999 } /* Literal.Number.Float */
+.highlight .mh { color: #009999 } /* Literal.Number.Hex */
+.highlight .mi { color: #009999 } /* Literal.Number.Integer */
+.highlight .mo { color: #009999 } /* Literal.Number.Oct */
+.highlight .sb { color: #d14 } /* Literal.String.Backtick */
+.highlight .sc { color: #d14 } /* Literal.String.Char */
+.highlight .sd { color: #d14 } /* Literal.String.Doc */
+.highlight .s2 { color: #d14 } /* Literal.String.Double */
+.highlight .se { color: #d14 } /* Literal.String.Escape */
+.highlight .sh { color: #d14 } /* Literal.String.Heredoc */
+.highlight .si { color: #d14 } /* Literal.String.Interpol */
+.highlight .sx { color: #d14 } /* Literal.String.Other */
+.highlight .sr { color: #009926 } /* Literal.String.Regex */
+.highlight .s1 { color: #d14 } /* Literal.String.Single */
+.highlight .ss { color: #990073 } /* Literal.String.Symbol */
+.highlight .bp { color: #999999 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #008080 } /* Name.Variable.Class */
+.highlight .vg { color: #008080 } /* Name.Variable.Global */
+.highlight .vi { color: #008080 } /* Name.Variable.Instance */
+.highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
+
+/*
+body {
+    max-width: 400px;
+    margin: 0;
+    background: #fff;
+    color: #eee;
+}
+*/
+
